@@ -1,0 +1,69 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: snowflake_customer_purchases
+    description: "A table"
+    columns:
+      - name: c_custkey
+        tests:
+           - unique
+           - not_null
+
+  - name: REPUTATION
+    description: "top 10 users with the highest reputation"
+    columns:
+      - name: Id
+        tests:
+           - unique
+           - not_null
+
+  - name: QUESTIONS
+    description: "Display Name is Alexandral"
+    columns:
+      - name: Id
+        tests:
+           - unique
+           - not_null
+
+  - name: MOST_POPULAR_BADGES
+    description: "10 Most Popular Badges"
+    columns:
+      - name: Id
+        tests:
+           - unique
+           - not_null
+
+  - name: QUESTIONCOUNT
+    description: "Reputation greater than 75000"
+    columns:
+      - name: Id
+        tests:
+           - unique
+           - not_null
+
+  - name: QUESTIONS_LIKE
+    description: "Text of questions where string contains nau"
+    columns:
+      - name: Id
+        tests:
+           - unique
+           - not_null
